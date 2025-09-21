@@ -27,8 +27,8 @@ const RevenueChart = () => {
 
   const processedData = chartData.map((d, i) => ({
     ...d,
-    currentSolid: i <= splitIndex ? d.current : null,
-    currentDotted: i >= splitIndex ? d.current : null,
+    current: i <= splitIndex ? d.current : null,
+    currentD: i >= splitIndex ? d.current : null,
   }));
   const theme = useTheme();
 
@@ -87,19 +87,19 @@ const RevenueChart = () => {
               strokeWidth={2}
               dot={false}
               isAnimationActive={false}
-              connectNulls={false}
+              connectNulls={true}
             />
 
             {/* Current Week dotted */}
             <Line
               type="monotone"
-              dataKey="current"
+              dataKey="currentD"
               stroke={theme.palette.mode === 'dark' ? "#C6C7F8" : "#000"}
               strokeWidth={2}
               dot={false}
               strokeDasharray="6 6"
               isAnimationActive={false}
-              connectNulls={false}
+              connectNulls={true}
             />
           </LineChart>
         </ResponsiveContainer>
