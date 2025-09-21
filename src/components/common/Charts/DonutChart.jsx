@@ -67,12 +67,15 @@ const DonutChart = ({ data, title = "Total Sales", centerValue = "" }) => {
                 data={chartData}
                 cx="50%"
                 cy="50%"
+                startAngle={30}
+                endAngle={-330}
                 innerRadius={45}
                 outerRadius={75}
-                paddingAngle={1}
-                cornerRadius={0}
+                paddingAngle={-10}
+                cornerRadius={14}
                 dataKey="value"
-                stroke="none"
+                // stroke="none"
+                strokeWidth={4}
               >
                 {chartData.map((entry, index) => (
                   <Cell key={`cell-${index}`} fill={entry.color} />
