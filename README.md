@@ -1,4 +1,5 @@
-# ByeWind Dashboard Application [Live Demo](https://bye-wind-nine.vercel.app/)
+# ByeWind Dashboard Application
+ [Live Demo](https://bye-wind-nine.vercel.app/)
 
 ByeWind is a modern React dashboard application with a clean UI featuring eCommerce analytics, order management, and interactive data visualizations.
 
