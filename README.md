@@ -36,6 +36,11 @@ Or using Yarn:
 yarn install
 ```
 
+> **Special Note:** If you encounter peer dependency issues with react-simple-maps, you may need to install it separately with the legacy-peer-deps flag:
+> ```bash
+> npm install react-simple-maps --legacy-peer-deps
+> ```
+
 This will install all the required packages defined in the `package.json` file, including:
 - React 19.1.1
 - Material UI 7.3.2
