@@ -69,10 +69,12 @@ const EcommerceDashboard = () => {
         display: 'flex', 
         gap: 3, 
         mb: 4,
+        flexDirection: { xs: 'column', md: 'row' },
         flexWrap: 'nowrap'
       }}>
         <Box sx={{ 
-          width: '50%',
+         width: { xs: '100%', md: '50%' },
+          mb: { xs: 3, md: 0 },
           flex: 'none'
         }}>
           <Box sx={{ 
@@ -120,7 +122,8 @@ const EcommerceDashboard = () => {
           </Box>
         </Box>
         <Box sx={{ 
-          width: '50%',
+          width: { xs: '100%', md: '50%' },
+          height: { xs: '300px', md: 'auto' }
         }}>
           <ProjectionsVsActualsChart />
         </Box>
@@ -130,17 +133,20 @@ const EcommerceDashboard = () => {
         display: 'flex', 
         gap: 3, 
         mb: 4,
+        flexDirection: { xs: 'column', md: 'row' },
         flexWrap: 'nowrap'
       }}>
         <Box sx={{ 
           flex: 1,
+          mb: { xs: 3, md: 0 },
         }}>
           <RevenueChart data={revenueChartData} />
         </Box>
         
         <Box sx={{ 
           // flex: 1,
-          minWidth: '300px'
+          width: { xs: '100%', md: 'auto' },
+          minWidth: { md: '300px' }
         }}>
           <RevenueByLocationCard 
             data={revenueByLocation}
@@ -152,17 +158,20 @@ const EcommerceDashboard = () => {
       <Box sx={{ 
         display: 'flex', 
         gap: 3,
+        flexDirection: { xs: 'column', md: 'row' },
         flexWrap: 'nowrap'
       }}>
         <Box sx={{ 
           flex: 1,
-          minWidth: '300px'
+          mb: { xs: 3, md: 0 },
+          minWidth: { md: '300px' }
         }}>
           <TopSellingProducts products={topSellingProducts} />
         </Box>
         
         <Box sx={{ 
-          minWidth: '300px'
+          width: { xs: '100%', md: 'auto' },
+          minWidth: { md: '300px' }
         }}>
           <DonutChart
             data={totalSalesData}
