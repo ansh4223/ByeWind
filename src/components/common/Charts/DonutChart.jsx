@@ -38,7 +38,7 @@ const DonutChart = ({ data, title = "Total Sales", centerValue = "" }) => {
       sx={{
         minWidth: 300,
         borderRadius: 3,
-        boxShadow: 1,
+        boxShadow: 'none',
         backgroundColor: "background.paper",
         height: "100%",
       }}
