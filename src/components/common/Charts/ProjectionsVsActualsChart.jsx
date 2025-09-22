@@ -20,7 +20,7 @@ import { useTheme } from "@mui/material/styles";
 const ProjectionsVsActualsChart = ({ title = "Projections vs Actuals" }) => {
   const theme = useTheme();
   return (
-    <Card sx={{ height: "100%" }}>
+    <Card sx={{ height: "100%", boxShadow: "none", backgroundColor: 'background.paper' }}>
       <CardContent sx={{ p: 3, height: "100%" }}>
         {/* Title */}
         <Typography
