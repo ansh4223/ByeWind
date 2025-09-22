@@ -12,7 +12,7 @@ const RevenueByLocationCard = ({ data, title = "Revenue by Location" }) => {
         p: 2.5,
         backgroundColor: 'background.paper',
         borderRadius: 3,
-        boxShadow: 1,
+        boxShadow: 'none',
         height: '100%',
         display: 'flex',
         flexDirection: 'column'
