@@ -110,10 +110,11 @@ export default function MetricCard({
       <Box
         sx={{
           display: "flex",
-          alignItems: "space-between",
-          gap: 8,
+          alignItems: "center",
+          // gap: 8,
           flexDirection: hovered ? "row-reverse" : "row",
-          justifyContent: "flex-start",
+          justifyContent: "space-between",
+          width:"100%",
           transition: "flex-direction 0.2s",
         }}
       >
@@ -129,6 +130,8 @@ export default function MetricCard({
             display: "flex",
             alignItems: "center",
             gap: 0.5,
+            ml: hovered ? 0 : 1,
+            mr: hovered ? 1 : 0,
           }}
         >
           {displayChange}
